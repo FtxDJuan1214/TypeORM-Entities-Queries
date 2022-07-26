@@ -7,8 +7,6 @@ import { Receipt_has_Products } from "../entities/Receipt_has_Porducts"
 import { Store } from "../entities/Store"
 import { AppDataSource } from "../db"
 import { validate as uuidvalidate } from "uuid"
-import { log } from "console"
-import { type } from "os"
 
 export const getClients = async (req: Request, res: Response) => {
     const clients = await AppDataSource
