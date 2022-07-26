@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<DBMODEL Version="1.92" TYPE="PostgreSQL">
+
+<MODELSETTINGS MDDVERSION="1.15.0 (build 1165)" ModelProject="" ModelName="DB" ModelCompany="" ModelAuthor="" ModelCopyright="" ModelVersion="" ModelVersionAI="0" ModelSaveScriptsWithVersion="0" ModelCreated="2022-07-22 15:39:17" ModelUpdated="2022-07-22 17:26:06" Description="" Annotation="" ZoomFac="100.00" XPos="0" YPos="0" PrintLink="" GenSettings="object GenSettings1: TGenSettings\n  TextCharCase = tccMixed\n  ModelCheck = True\n  DropIfExists = True\n  NotValidConstraints = False\n  ConcurrentlyIndexes = False\n  ISQL = False\n  ExecuteAfterGeneration = True\n  DBOptions = [dbgoCreate, dbgoBeginScript, dbgoEndScript]\n  ViewOptions = [viewgoCreate, viewgoCreateRule]\n  SPOptions = [spgoCreate]\n  TableOptions = [tblgoCreate, tblgoBeginScript, tblgoEndScript, tblgoComment, tblgoCreatePK, tblgoCreateFK, tblgoCreateIndex, tblgoCreateRule, tblgoCreateTrigger, tblgoCreateCHECK, tblgoFieldDefault]\n  OwnerOptions = [owngoSchema, owngoTable, owngoView, owngoSP, owngoSequence, owngoUDT]\n  ACLOptions = [aclgoSchema, aclgoTable, aclgoView, aclgoSP, aclgoSequence]\n  ModifyOptions = [mgoKeepTbls, mgoBackupTbls, mgoTraceRenaming]\n  RoleCreate = True\n  RoleWhenCreate = rocrInScript\n  SQLTypeNames = False\nend\n" DisplaySettings="object DisplaySettings1: TDisplaySettings\n  ObjectsDisplay = [edoColumns, edoInhColumns, edoIndices, edoConstraints, edoTriggers, edoRules, edoColTypes, edoFKs, rdoRefName, spdoParameters, spdoResult, spdoParamTypes, spdoParamKind, vdoAttributes, vdoTargets, vdoRules]\n  Color = clWhite\n  ShowIcons = True\n  SnapGrid = True\n  DisplaySnap = True\n  SnapSize = 10\n  ShowPages = True\n  EntityFillColor = clWhite\n  EntityLineColor = clNavy\n  EntityFontColor = clBlack\n  SPFillColor = clCream\n  SPLineColor = clNavy\n  SPFontColor = clBlack\n  ViewFillColor = clMoneyGreen\n  ViewLineColor = clNavy\n  ViewFontColor = clBlack\n  RefNotation = 0\n  RefColor = clNavy\n  RefLabelColor = clWhite\n  RefLabelFontColor = clBlack\n  MinimapShapesStyle = mmssFillAndBorder\n  MinimapVisibleAreaStyle = mmvasBitmapShading\n  MinimapBackColor = clWhite\nend\n" DefaultDelete="3" DefaultUpdate="3" DefaultDataType="23" DefaultSchemaID="0" NamePatterns="" QueryDelimiter=";" DBQuoteCharacter="\A" EncloseNames="1" PKColumnsFirst="0" HPageCount="5" VPageCount="5" />
+
+<DATABASE Name="Database_1" CharacterSet="" Collate="" CType="" Tablespace="" Owner="" Template="" Comments="" Description="" Annotation="" BeginScript="" EndScript="" Generate="0" />
+
+<STAMPS>
+</STAMPS>
+
+<ROLES>
+<ROLE ID="6171" Name="pg_database_owner" Roles="" Admins="" Generate="0" Comments="" Password="" CreateDB="0" SuperUser="0" CreateRole="0" Inherit="1" UpdateCatalogs="0" Login="0" PassEncrypted="0" Valid="2958465.99999"></ROLE>
+<ROLE ID="6181" Name="pg_read_all_data" Roles="" Admins="" Generate="0" Comments="" Password="" CreateDB="0" SuperUser="0" CreateRole="0" Inherit="1" UpdateCatalogs="0" Login="0" PassEncrypted="0" Valid="2958465.99999"></ROLE>
+<ROLE ID="6182" Name="pg_write_all_data" Roles="" Admins="" Generate="0" Comments="" Password="" CreateDB="0" SuperUser="0" CreateRole="0" Inherit="1" UpdateCatalogs="0" Login="0" PassEncrypted="0" Valid="2958465.99999"></ROLE>
+<ROLE ID="3373" Name="pg_monitor" Roles="" Admins="" Generate="0" Comments="" Password="" CreateDB="0" SuperUser="0" CreateRole="0" Inherit="1" UpdateCatalogs="0" Login="0" PassEncrypted="0" Valid="2958465.99999"></ROLE>
+<ROLE ID="3374" Name="pg_read_all_settings" Roles="" Admins="3373" Generate="0" Comments="" Password="" CreateDB="0" SuperUser="0" CreateRole="0" Inherit="1" UpdateCatalogs="0" Login="0" PassEncrypted="0" Valid="2958465.99999"></ROLE>
+<ROLE ID="3375" Name="pg_read_all_stats" Roles="" Admins="3373" Generate="0" Comments="" Password="" CreateDB="0" SuperUser="0" CreateRole="0" Inherit="1" UpdateCatalogs="0" Login="0" PassEncrypted="0" Valid="2958465.99999"></ROLE>
+<ROLE ID="3377" Name="pg_stat_scan_tables" Roles="" Admins="3373" Generate="0" Comments="" Password="" CreateDB="0" SuperUser="0" CreateRole="0" Inherit="1" UpdateCatalogs="0" Login="0" PassEncrypted="0" Valid="2958465.99999"></ROLE>
+<ROLE ID="4569" Name="pg_read_server_files" Roles="" Admins="" Generate="0" Comments="" Password="" CreateDB="0" SuperUser="0" CreateRole="0" Inherit="1" UpdateCatalogs="0" Login="0" PassEncrypted="0" Valid="2958465.99999"></ROLE>
+<ROLE ID="4570" Name="pg_write_server_files" Roles="" Admins="" Generate="0" Comments="" Password="" CreateDB="0" SuperUser="0" CreateRole="0" Inherit="1" UpdateCatalogs="0" Login="0" PassEncrypted="0" Valid="2958465.99999"></ROLE>
+<ROLE ID="4571" Name="pg_execute_server_program" Roles="" Admins="" Generate="0" Comments="" Password="" CreateDB="0" SuperUser="0" CreateRole="0" Inherit="1" UpdateCatalogs="0" Login="0" PassEncrypted="0" Valid="2958465.99999"></ROLE>
+<ROLE ID="4200" Name="pg_signal_backend" Roles="" Admins="" Generate="0" Comments="" Password="" CreateDB="0" SuperUser="0" CreateRole="0" Inherit="1" UpdateCatalogs="0" Login="0" PassEncrypted="0" Valid="2958465.99999"></ROLE>
+<ROLE ID="10" Name="postgres" Roles="" Admins="" Generate="0" Comments="" Password="SCRAM-SHA-256$4096:IshHsSDDIgvOHGav5e7KJw==$7l/hFHVOZ9HqA0dzESy3i2cmzOSE2wzS42tkTg//5yU=:XLLhZXbYa9mczn5PS3dVd9FNnxcN76Rt5NCN34STbvo=" CreateDB="1" SuperUser="1" CreateRole="1" Inherit="1" UpdateCatalogs="0" Login="1" PassEncrypted="1" Valid="2958465.99999"></ROLE>
+</ROLES>
+
+<SCHEMAS>
+<SCHEMA ID="0" Name="public" Owner="" Generate="0" Comments="" System="1" ACL=""></SCHEMA>
+</SCHEMAS>
+
+<SEQUENCES>
+</SEQUENCES>
+
+<DOMAINS>
+</DOMAINS>
+
+<COMPOSITES>
+<COMPOSITE ID="43137" Name="client" SchemaName="public" OwnerName="" Comments="" MasterTableOID="43211">
+	<COLUMNS>
+	</COLUMNS>
+</COMPOSITE>
+<COMPOSITE ID="43138" Name="product" SchemaName="public" OwnerName="" Comments="" MasterTableOID="43229">
+	<COLUMNS>
+	</COLUMNS>
+</COMPOSITE>
+<COMPOSITE ID="43139" Name="product_type" SchemaName="public" OwnerName="" Comments="" MasterTableOID="43221">
+	<COLUMNS>
+	</COLUMNS>
+</COMPOSITE>
+<COMPOSITE ID="43140" Name="receipt" SchemaName="public" OwnerName="" Comments="" MasterTableOID="43237">
+	<COLUMNS>
+	</COLUMNS>
+</COMPOSITE>
+<COMPOSITE ID="43141" Name="receipt_has_products" SchemaName="public" OwnerName="" Comments="" MasterTableOID="43323">
+	<COLUMNS>
+	</COLUMNS>
+</COMPOSITE>
+<COMPOSITE ID="43142" Name="store" SchemaName="public" OwnerName="" Comments="" MasterTableOID="43358">
+	<COLUMNS>
+	</COLUMNS>
+</COMPOSITE>
+</COMPOSITES>
+
+<SCALARS>
+</SCALARS>
+
+<ENUMS>
+<ENUM ID="43068" Name="product_type_name_enum" SchemaName="public" Values="Food,Technology,Clothes,Home" Comments="" OwnerName="postgres"></ENUM>
+</ENUMS>
+
+<TABLESPACES>
+</TABLESPACES>
+
+<METADATA>
+<ENTITIES>
+<ENTITY ID="43211" Name="client" SchemaOID="0" SchemaName="public" OwnerID="10" OwnerName="postgres" TablespaceID="0" XPos="30" YPos="20" Temporary="0" Unlogged="0" OnCommit="" Inherits="" FillColor="13959039" LineColor="8388608" FontColor="0" CharacterSet="" Collate="" Comments="" Description="" Annotation="" BeginScript="" EndScript="" Generate="1" ACL="" StorageParams="" >
+	<COLUMNS>
+		<COLUMN ID="288" Name="id" Pos="0" Datatype="2950" Type="uuid" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="1" IsFKey="0" DefaultValue="uuid_generate_v4()" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="289" Name="firstName" Pos="1" Datatype="1043" Type="varchar" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="290" Name="lastName" Pos="2" Datatype="1043" Type="varchar" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="291" Name="email" Pos="3" Datatype="1043" Type="varchar" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+	</COLUMNS>
+	<REFERENCES_BEGIN>
+		<REFERENCE_BEGIN ID="43259" />
+	</REFERENCES_BEGIN>
+	<CONSTRAINTS>
+		<CONSTRAINT ID="43218" Name="PK_96da49381769303a6515a8785c7" Kind="2" Expression="" ReferenceIndex="43394" FillFactor="" Comments="" TablespaceID="0" Deferrable="0" Method="0">
+			<CONSTRAINTCOLUMNS COMMATEXT="288"></CONSTRAINTCOLUMNS>
+			<CONSTRAINTOPERATORS COMMATEXT=""></CONSTRAINTOPERATORS>
+		</CONSTRAINT>
+		<CONSTRAINT ID="43220" Name="UQ_6436cc6b79593760b9ef921ef12" Kind="1" Expression="" ReferenceIndex="43395" FillFactor="" Comments="" TablespaceID="0" Deferrable="0" Method="0">
+			<CONSTRAINTCOLUMNS COMMATEXT="291"></CONSTRAINTCOLUMNS>
+			<CONSTRAINTOPERATORS COMMATEXT=""></CONSTRAINTOPERATORS>
+		</CONSTRAINT>
+	</CONSTRAINTS>
+</ENTITY>
+
+<ENTITY ID="43229" Name="product" SchemaOID="0" SchemaName="public" OwnerID="10" OwnerName="postgres" TablespaceID="0" XPos="980" YPos="440" Temporary="0" Unlogged="0" OnCommit="" Inherits="" FillColor="13959039" LineColor="8388608" FontColor="0" CharacterSet="" Collate="" Comments="" Description="" Annotation="" BeginScript="" EndScript="" Generate="1" ACL="" StorageParams="" >
+	<COLUMNS>
+		<COLUMN ID="292" Name="id" Pos="0" Datatype="2950" Type="uuid" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="1" IsFKey="0" DefaultValue="uuid_generate_v4()" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="293" Name="name" Pos="1" Datatype="1043" Type="varchar" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="294" Name="description" Pos="2" Datatype="25" Type="text" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="295" Name="productType_id" Pos="3" Datatype="2950" Type="uuid" Width="0" Prec="0" NotNull="0" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="1" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+	</COLUMNS>
+	<REFERENCES_BEGIN>
+		<REFERENCE_BEGIN ID="43335" />
+	</REFERENCES_BEGIN>
+	<REFERENCES_END>
+		<REFERENCE_END ID="43352" />
+	</REFERENCES_END>
+	<CONSTRAINTS>
+		<CONSTRAINT ID="43236" Name="PK_bebc9158e480b949565b4dc7a82" Kind="2" Expression="" ReferenceIndex="43401" FillFactor="" Comments="" TablespaceID="0" Deferrable="0" Method="0">
+			<CONSTRAINTCOLUMNS COMMATEXT="292"></CONSTRAINTCOLUMNS>
+			<CONSTRAINTOPERATORS COMMATEXT=""></CONSTRAINTOPERATORS>
+		</CONSTRAINT>
+	</CONSTRAINTS>
+</ENTITY>
+
+<ENTITY ID="43221" Name="product_type" SchemaOID="0" SchemaName="public" OwnerID="10" OwnerName="postgres" TablespaceID="0" XPos="960" YPos="20" Temporary="0" Unlogged="0" OnCommit="" Inherits="" FillColor="13959039" LineColor="8388608" FontColor="0" CharacterSet="" Collate="" Comments="" Description="" Annotation="" BeginScript="" EndScript="" Generate="1" ACL="" StorageParams="" >
+	<COLUMNS>
+		<COLUMN ID="296" Name="id" Pos="0" Datatype="2950" Type="uuid" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="1" IsFKey="0" DefaultValue="uuid_generate_v4()" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="297" Name="name" Pos="1" Datatype="43068" Type="product_type_name_enum" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="298" Name="code" Pos="2" Datatype="23" Type="int4" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+	</COLUMNS>
+	<REFERENCES_BEGIN>
+		<REFERENCE_BEGIN ID="43352" />
+	</REFERENCES_BEGIN>
+	<CONSTRAINTS>
+		<CONSTRAINT ID="43226" Name="PK_e0843930fbb8854fe36ca39dae1" Kind="2" Expression="" ReferenceIndex="43391" FillFactor="" Comments="" TablespaceID="0" Deferrable="0" Method="0">
+			<CONSTRAINTCOLUMNS COMMATEXT="296"></CONSTRAINTCOLUMNS>
+			<CONSTRAINTOPERATORS COMMATEXT=""></CONSTRAINTOPERATORS>
+		</CONSTRAINT>
+		<CONSTRAINT ID="43228" Name="UQ_69a52b82458769a4d2ab1835b62" Kind="1" Expression="" ReferenceIndex="43392" FillFactor="" Comments="" TablespaceID="0" Deferrable="0" Method="0">
+			<CONSTRAINTCOLUMNS COMMATEXT="298"></CONSTRAINTCOLUMNS>
+			<CONSTRAINTOPERATORS COMMATEXT=""></CONSTRAINTOPERATORS>
+		</CONSTRAINT>
+	</CONSTRAINTS>
+</ENTITY>
+
+<ENTITY ID="43237" Name="receipt" SchemaOID="0" SchemaName="public" OwnerID="10" OwnerName="postgres" TablespaceID="0" XPos="30" YPos="430" Temporary="0" Unlogged="0" OnCommit="" Inherits="" FillColor="13959039" LineColor="8388608" FontColor="0" CharacterSet="" Collate="" Comments="" Description="" Annotation="" BeginScript="" EndScript="" Generate="1" ACL="" StorageParams="" >
+	<COLUMNS>
+		<COLUMN ID="299" Name="id" Pos="0" Datatype="2950" Type="uuid" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="1" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="300" Name="createdAt" Pos="1" Datatype="1114" Type="timestamp" Width="-1" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="now()" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="301" Name="clientId" Pos="2" Datatype="2950" Type="uuid" Width="0" Prec="0" NotNull="0" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="1" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="302" Name="total" Pos="3" Datatype="1015" Type="varchar[]" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+	</COLUMNS>
+	<REFERENCES_BEGIN>
+		<REFERENCE_BEGIN ID="43330" />
+	</REFERENCES_BEGIN>
+	<REFERENCES_END>
+		<REFERENCE_END ID="43259" />
+	</REFERENCES_END>
+	<CONSTRAINTS>
+		<CONSTRAINT ID="43244" Name="PK_b4b9ec7d164235fbba023da9832" Kind="2" Expression="" ReferenceIndex="43398" FillFactor="" Comments="" TablespaceID="0" Deferrable="0" Method="0">
+			<CONSTRAINTCOLUMNS COMMATEXT="299"></CONSTRAINTCOLUMNS>
+			<CONSTRAINTOPERATORS COMMATEXT=""></CONSTRAINTOPERATORS>
+		</CONSTRAINT>
+		<CONSTRAINT ID="43246" Name="REL_3b923d339a53d9c9cee2241e77" Kind="1" Expression="" ReferenceIndex="43399" FillFactor="" Comments="" TablespaceID="0" Deferrable="0" Method="0">
+			<CONSTRAINTCOLUMNS COMMATEXT="301"></CONSTRAINTCOLUMNS>
+			<CONSTRAINTOPERATORS COMMATEXT=""></CONSTRAINTOPERATORS>
+		</CONSTRAINT>
+	</CONSTRAINTS>
+</ENTITY>
+
+<ENTITY ID="43323" Name="receipt_has_products" SchemaOID="0" SchemaName="public" OwnerID="10" OwnerName="postgres" TablespaceID="0" XPos="490" YPos="440" Temporary="0" Unlogged="0" OnCommit="" Inherits="" FillColor="13959039" LineColor="8388608" FontColor="0" CharacterSet="" Collate="" Comments="" Description="" Annotation="" BeginScript="" EndScript="" Generate="1" ACL="" StorageParams="" >
+	<COLUMNS>
+		<COLUMN ID="303" Name="receiptId" Pos="0" Datatype="2950" Type="uuid" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="1" IsFKey="1" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="304" Name="productId" Pos="1" Datatype="2950" Type="uuid" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="1" IsFKey="1" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="305" Name="OrderNumber" Pos="2" Datatype="23" Type="int4" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="306" Name="city" Pos="3" Datatype="1043" Type="varchar" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+	</COLUMNS>
+	<REFERENCES_END>
+		<REFERENCE_END ID="43330" />
+		<REFERENCE_END ID="43335" />
+	</REFERENCES_END>
+	<CONSTRAINTS>
+		<CONSTRAINT ID="43329" Name="PK_80bdfb70dcc4cf9d46b47b3163f" Kind="2" Expression="" ReferenceIndex="43402" FillFactor="" Comments="" TablespaceID="0" Deferrable="0" Method="0">
+			<CONSTRAINTCOLUMNS COMMATEXT="303,304"></CONSTRAINTCOLUMNS>
+			<CONSTRAINTOPERATORS COMMATEXT=""></CONSTRAINTOPERATORS>
+		</CONSTRAINT>
+	</CONSTRAINTS>
+</ENTITY>
+
+<ENTITY ID="43358" Name="store" SchemaOID="0" SchemaName="public" OwnerID="10" OwnerName="postgres" TablespaceID="0" XPos="490" YPos="170" Temporary="0" Unlogged="0" OnCommit="" Inherits="" FillColor="13959039" LineColor="8388608" FontColor="0" CharacterSet="" Collate="" Comments="" Description="" Annotation="" BeginScript="" EndScript="" Generate="1" ACL="" StorageParams="" >
+	<COLUMNS>
+		<COLUMN ID="307" Name="id" Pos="0" Datatype="23" Type="int4" Width="0" Prec="0" NotNull="1" AutoInc="1" Collation="" PrimaryKey="1" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="308" Name="name" Pos="1" Datatype="1043" Type="varchar" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="309" Name="description" Pos="2" Datatype="25" Type="text" Width="0" Prec="0" NotNull="1" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="0" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+		<COLUMN ID="310" Name="parentStoreId" Pos="3" Datatype="23" Type="int4" Width="0" Prec="0" NotNull="0" AutoInc="0" Collation="" PrimaryKey="0" IsFKey="1" DefaultValue="" QuoteDefault="0" Comments=""></COLUMN>
+	</COLUMNS>
+	<REFERENCES_BEGIN>
+		<REFERENCE_BEGIN ID="43366" />
+	</REFERENCES_BEGIN>
+	<REFERENCES_END>
+		<REFERENCE_END ID="43366" />
+	</REFERENCES_END>
+	<CONSTRAINTS>
+		<CONSTRAINT ID="43365" Name="PK_f3172007d4de5ae8e7692759d79" Kind="2" Expression="" ReferenceIndex="43404" FillFactor="" Comments="" TablespaceID="0" Deferrable="0" Method="0">
+			<CONSTRAINTCOLUMNS COMMATEXT="307"></CONSTRAINTCOLUMNS>
+			<CONSTRAINTOPERATORS COMMATEXT=""></CONSTRAINTOPERATORS>
+		</CONSTRAINT>
+	</CONSTRAINTS>
+</ENTITY>
+
+</ENTITIES>
+
+<REFERENCES>
+<REFERENCE ID="43352" Name="FK_d8733ba001551a6ff8ec3268ca6" SOURCE="43221" DESTINATION="43229" FKIDS="296=295\n" Direction="0" RefColor="8388608" RefLabelColor="16777215" RefLabelFontColor="0" OnDelete="3" OnUpdate="3" Deferrable="0" MatchType="0" Comments="" Description="" Annotation="" Generate="1" FKConstraint_ID="43226" LabelPointNumber="2" LabelPosition="0.5" ManualStartTailPosition="0" ManualEndTailPosition="0" />
+	<USERPOINTS>
+	</USERPOINTS>
+</REFERENCE>
+<REFERENCE ID="43259" Name="FK_3b923d339a53d9c9cee2241e772" SOURCE="43211" DESTINATION="43237" FKIDS="288=301\n" Direction="0" RefColor="8388608" RefLabelColor="16777215" RefLabelFontColor="0" OnDelete="3" OnUpdate="3" Deferrable="0" MatchType="0" Comments="" Description="" Annotation="" Generate="1" FKConstraint_ID="43218" LabelPointNumber="2" LabelPosition="0.5" ManualStartTailPosition="0" ManualEndTailPosition="0" />
+	<USERPOINTS>
+	</USERPOINTS>
+</REFERENCE>
+<REFERENCE ID="43330" Name="FK_baf58a67a4707dd3ea18a1156d1" SOURCE="43237" DESTINATION="43323" FKIDS="299=303\n" Direction="0" RefColor="8388608" RefLabelColor="16777215" RefLabelFontColor="0" OnDelete="3" OnUpdate="3" Deferrable="0" MatchType="0" Comments="" Description="" Annotation="" Generate="1" FKConstraint_ID="43244" LabelPointNumber="2" LabelPosition="0.5" ManualStartTailPosition="0" ManualEndTailPosition="0" />
+	<USERPOINTS>
+	</USERPOINTS>
+</REFERENCE>
+<REFERENCE ID="43335" Name="FK_0c7afd30ffaabad5d04c44e256b" SOURCE="43229" DESTINATION="43323" FKIDS="292=304\n" Direction="0" RefColor="8388608" RefLabelColor="16777215" RefLabelFontColor="0" OnDelete="3" OnUpdate="3" Deferrable="0" MatchType="0" Comments="" Description="" Annotation="" Generate="1" FKConstraint_ID="43236" LabelPointNumber="2" LabelPosition="0.5" ManualStartTailPosition="0" ManualEndTailPosition="0" />
+	<USERPOINTS>
+	</USERPOINTS>
+</REFERENCE>
+<REFERENCE ID="43366" Name="FK_4ccbf491c9ab01a0ef49fb76fd6" SOURCE="43358" DESTINATION="43358" FKIDS="307=310\n" Direction="0" RefColor="8388608" RefLabelColor="16777215" RefLabelFontColor="0" OnDelete="3" OnUpdate="3" Deferrable="0" MatchType="0" Comments="" Description="" Annotation="" Generate="1" FKConstraint_ID="43365" LabelPointNumber="2" LabelPosition="0.6" ManualStartTailPosition="0" ManualEndTailPosition="0" />
+	<USERPOINTS>
+	</USERPOINTS>
+</REFERENCE>
+</REFERENCES>
+
+<NOTES>
+</NOTES>
+
+<STOREDPROCES>
+</STOREDPROCES>
+
+<VIEWS>
+</VIEWS>
+
+</METADATA>
+</DBMODEL>
